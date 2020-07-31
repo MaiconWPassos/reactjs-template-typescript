@@ -58,6 +58,7 @@ const Login: React.FC = () => {
           placeholder="Email"
           name="email"
           onChange={handleInputChange}
+          value={formData.email}
         />
         <Input
           id="password"
@@ -65,6 +66,7 @@ const Login: React.FC = () => {
           placeholder="Senha"
           name="password"
           onChange={handleInputChange}
+          value={formData.password}
         />
         <ButtonSubmit>Entrar</ButtonSubmit>
       </FormLogin>

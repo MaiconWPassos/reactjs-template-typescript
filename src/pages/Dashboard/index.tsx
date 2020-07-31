@@ -1,9 +1,17 @@
 import React from 'react';
+import Layout from '~/components/Layout';
 
-// import { Container } from './styles';
+import { DashboardContainer } from './styles';
+import Input from '~/components/Input';
 
 const Dashboard: React.FC = () => {
-  return <h1>Dashboard</h1>;
+  return (
+    <Layout title={`${process.env.REACT_APP_NAME}`}>
+      <DashboardContainer>
+        <Input id="search" placeholder="Pesquisar" />
+      </DashboardContainer>
+    </Layout>
+  );
 };
 
 export default Dashboard;
